@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Spline from '@splinetool/react-spline';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+      <Spline scene="https://prod.spline.design/kgQb2vdqLxGuaQnc/scene.splinecode" />
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: '#fff', textAlign: 'center' }}>
+        <h1>KIPYEGON Dashboard</h1>
+        <p>Welcome to your personal finance management tool</p>
+      </div>
+    </main>
   );
 }
-
-export default App;
