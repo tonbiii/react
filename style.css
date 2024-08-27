@@ -1,0 +1,12 @@
+body {
+    background: radial-gradient(circle at top left, #1a1a1a, #000000); /* Dark gradient from greyish black to pure black */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('path-to-texture.png'); /* Subtle texture overlay */
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
